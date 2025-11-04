@@ -1,11 +1,11 @@
 function ItemDetail({ producto }) {
   return (
-    <div className="card text-center p-4 shadow">
+    <div className="card text-center p-4 shadow" style={{ marginTop: "90px" }}>
       <img
-        src={producto.img}
+        src={producto.imagen}
         className="card-img-top mx-auto"
         alt={producto.nombre}
-        style={{ maxWidth: "250px" }}
+        style={{ maxWidth: "250px", borderRadius: "10px" }}
       />
       <div className="card-body">
         <h3>{producto.nombre}</h3>
