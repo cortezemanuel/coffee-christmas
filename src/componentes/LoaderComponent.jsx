@@ -3,8 +3,10 @@ import { Spinner } from "react-bootstrap";
 
 const LoaderComponent = () => {
   return (
-    <div class="spinner-grow text-danger" role="status">
-      <span class="visually-hidden">Loading...</span>
+    <div className="d-flex justify-content-center mt-5">
+      <Spinner animation="border" variant="danger" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </Spinner>
     </div>
   );
 };

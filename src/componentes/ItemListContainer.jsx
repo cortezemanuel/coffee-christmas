@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import ItemList from "./ItemList";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../service/firebase";
+import LoaderComponent from "./LoaderComponent";
 
 function ItemListContainer({ saludo }) {
   const [items, setItems] = useState([]);
@@ -12,7 +13,6 @@ function ItemListContainer({ saludo }) {
 
   useEffect(() => {
     setLoader(true);
-
     const productsCollection = idCategoria
       ? query(
           collection(db, "productos"),
@@ -45,11 +45,7 @@ function ItemListContainer({ saludo }) {
   return (
     <div className="container mt-4">
       <h2 className="text-center text-danger">{saludo}</h2>
-      {loader ? (
-        <p className="text-center mt-5">Cargando productos...</p>
-      ) : (
-        <ItemList items={items} />
-      )}
+      {loader ? <LoaderComponent /> : <ItemList items={items} />}
     </div>
   );
 }

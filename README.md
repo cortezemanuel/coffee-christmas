@@ -4,7 +4,7 @@ Bienvenido a **Coffee Christmas**, una web de café y regalos con temática navi
 
 ---
 
-![imageApp](./public/img/readme-app.png)
+![imageApp](/img/readme-app.png)
 
 ## 🌟 Funcionalidades
 
