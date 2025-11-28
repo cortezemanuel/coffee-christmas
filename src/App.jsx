@@ -7,7 +7,7 @@ import CartContainer from "./componentes/CartContainer";
 import CheckoutRHF from "./componentes/CheckoutRHF";
 import Error from "./componentes/Error";
 import { CartProvider } from "./context/CartContext";
-import Home from "./componentes/Home"; // <-- importamos Home
+import Home from "./componentes/Home";
 import "./App.css";
 
 function App() {
