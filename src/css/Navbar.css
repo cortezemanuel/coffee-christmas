@@ -74,6 +74,7 @@
   font-size: 0.9rem;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
+
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
@@ -93,4 +94,25 @@
   .cart-widget {
     margin-top: 10px;
   }
+}
+
+.btn-xmas {
+  background: linear-gradient(135deg, #c70039, #ff5733);
+  color: white;
+  border: 2px solid #0b8a0b;
+  padding: 8px 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-xmas:hover {
+  background: linear-gradient(135deg, #ff0000, #ff7b00);
+  border-color: #0db10d;
+  transform: scale(1.05);
+}
+
+.btn-xmas:disabled {
+  background: #b8b8b8;
+  border-color: #7d7d7d;
 }

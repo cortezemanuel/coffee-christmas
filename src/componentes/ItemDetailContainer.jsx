@@ -1,25 +1,32 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import productos from "../data/productos";
 import ItemDetail from "./ItemDetail";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../service/firebase";
 
 function ItemDetailContainer() {
-  const [item, setItem] = useState(null);
+  const [producto, setProducto] = useState(null);
+  const [loader, setLoader] = useState(false);
   const { idProducto } = useParams();
 
   useEffect(() => {
-    const obtenerProducto = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(productos.find((prod) => prod.id === parseInt(idProducto)));
-      }, 1000);
-    });
+    setLoader(true);
+    const productRef = doc(db, "productos", idProducto);
 
-    obtenerProducto.then((res) => setItem(res));
+    getDoc(productRef)
+      .then((res) => {
+        if (res.exists()) setProducto({ id: res.id, ...res.data() });
+      })
+      .finally(() => setLoader(false));
   }, [idProducto]);
 
   return (
     <div className="container mt-4">
-      {item ? <ItemDetail producto={item} /> : <p>Cargando producto...</p>}
+      {loader ? (
+        <p className="text-center mt-4">Cargando producto...</p>
+      ) : (
+        producto && <ItemDetail producto={producto} />
+      )}
     </div>
   );
 }

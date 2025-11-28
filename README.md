@@ -1,16 +1,36 @@
-# React + Vite
+# Coffee Christmas 🎄☕
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a **Coffee Christmas**, una web de café y regalos con temática navideña, diseñada para ofrecer una experiencia cálida y festiva a los usuarios.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![imageApp](/public/readme-app.png)
 
-## React Compiler
+## 🌟 Funcionalidades
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Visualización de productos por categorías.
+- Detalle individual de cada producto.
+- Carrito de compras dinámico.
+- Checkout seguro con formulario React Hook Form.
+- Fondo navideño animado en la home para ambientación.
+- Navegación fluida gracias a React Router Dom.
 
-## Expanding the ESLint configuration
+### Instalación ⚙️
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone el repositorio.
+2. Hacer el comando `cd christmas-coffee` para moverse a la carpeta raiz del proyecto.
+3. Instale dependencias con el comando `npm install`.
+4. Para levantar el proyecto de manera local ejecute el comando `npm run dev`
+
+### Version Host 💻
+
+Si desea ver el proyecto online, puede ingredar al siguiente link: [Coder App](https://coffee-christmas.vercel.app/)
+
+### Librerias utilizaron 📖
+
+- [Firebase](): utilizado como base de datos.
+- [React Router Dom](): utilizada para la navegacion por rutas del proyecto.
+- [React Bootstrap](): utilizada para el styling de la app
+
+Desarrollado por Emanuel -
+Merry Christmas!!
