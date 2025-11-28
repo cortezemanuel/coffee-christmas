@@ -2,9 +2,7 @@
 
 Bienvenido a **Coffee Christmas**, una web de café y regalos con temática navideña, diseñada para ofrecer una experiencia cálida y festiva a los usuarios.
 
----
-
-![imageApp](./public/img/readme-app.png)
+## ![imageApp](/img/readme-app.png)
 
 ## 🌟 Funcionalidades
 
