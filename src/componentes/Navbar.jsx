@@ -76,7 +76,7 @@ const Navbar = () => {
         </div>
 
         <div className="d-flex align-items-center gap-3">
-          <form className="d-flex" role="search">
+          {/* <form className="d-flex" role="search">
             <input
               className="form-control me-2"
               type="search"
@@ -86,7 +86,7 @@ const Navbar = () => {
             <button className="btn btn-danger text-white" type="submit">
               Buscar
             </button>
-          </form>
+          </form> */}
           <CartWidget />
         </div>
 
